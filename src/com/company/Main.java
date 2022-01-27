@@ -74,7 +74,6 @@ public class Main {
                     for (String s1 : s) {
                         System.out.println(s1);
                     }
-            System.out.println("over");
                     System.exit(0);
 
                 }

@@ -1,20 +1,22 @@
 package com.company;
 
-import java.util.Arrays;
-import java.util.stream.Stream;
-/* Test cases
- "" :-                0
- "1":-                1
- "1","2":-            3
- "1\n2,3":-           6
- //[***]\n1***2***3:- 6
- //[*][%]\n1*2%3:-    6
- *
- */
+import org.junit.Test;
+
 public class Main {
 
     public static void main(String[] args) {
 
+        testAdd();
+    }
+
+    @Test
+    private static void testAdd() {
+        System.out.println(Add(""));
+        System.out.println(Add("1"));
+        System.out.println(Add("1","2"));
+        System.out.println(Add("1\n2,3"));
+        System.out.println(Add("//;\\n1;2"));
+        System.out.println(Add("//[***]\\n1***2***3"));
         System.out.println(Add("//[*][%]\\n1*2%3"));
     }
 
